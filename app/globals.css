@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0A0B;
+  --surface: #141416;
+  --primary: #007AFF;
+  --danger: #FF3B30;
+  --success: #34C759;
+  --warning: #FF9500;
+  --textHigh: #E5E5EA;
+  --textMedium: #AEAEB2;
+  --border: #2C2C2E;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--textHigh);
+}
+
+/* Custom utility classes for the project colors */
+.bg-background { background-color: var(--background); }
+.bg-surface { background-color: var(--surface); }
+.bg-primary { background-color: var(--primary); }
+.bg-danger { background-color: var(--danger); }
+.bg-success { background-color: var(--success); }
+.bg-warning { background-color: var(--warning); }
+
+.text-textHigh { color: var(--textHigh); }
+.text-textMedium { color: var(--textMedium); }
+.text-primary { color: var(--primary); }
+.text-danger { color: var(--danger); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+
+.border-border { border-color: var(--border); }
+.border-primary { border-color: var(--primary); }
+
+.focus\:border-primary:focus { border-color: var(--primary); }
+.hover\:bg-primary:hover { background-color: var(--primary); }
